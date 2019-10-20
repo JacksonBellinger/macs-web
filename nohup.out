@@ -1,0 +1,14 @@
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.0.0.207:8080
+  http://10.0.0.114:8080
+Hit CTRL-C to stop the server
+[Sat Sep 21 2019 13:16:19 GMT-0400 (Eastern Daylight Time)] "GET /" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) kioclient/5.14.5 Safari/534.34"
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:8080
+  http://10.0.0.114:8080
+Hit CTRL-C to stop the server
+[Mon Sep 23 2019 23:53:28 GMT-0400 (Eastern Daylight Time)] "GET /" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) kioclient/5.14.5 Safari/534.34"
+http-server stopped.
