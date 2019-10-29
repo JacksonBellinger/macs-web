@@ -1,7 +1,8 @@
 /**
  * Main AngularJS Web Application
  */
-var app = angular.module('tutorialWebApp', [
+
+var app = angular.module('macs-website', [
   'ngRoute'
 ]);
 
@@ -17,9 +18,9 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/faq", {templateUrl: "partials/faq.html", controller: "PageCtrl"})
     //.when("/pricing", {templateUrl: "partials/pricing.html", controller: "PageCtrl"})
     .when("/gullcode", {templateUrl: "partials/gullcode.html", controller: "PageCtrl"})
-    .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+    //.when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
     // Blog
-    .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
+    //.when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     //.when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
@@ -38,13 +39,4 @@ app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
 app.controller('PageCtrl', function (/* $scope, $location, $http */) {
   console.log("Page Controller reporting for duty.");
 
-  // Activates the Carousel
-  $('.carousel').carousel({
-    interval: 5000
-  });
-
-  // Activates Tooltips for Social Links
-  $('.tooltip-social').tooltip({
-    selector: "a[data-toggle=tooltip]"
-  })
 });

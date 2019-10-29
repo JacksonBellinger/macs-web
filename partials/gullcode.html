@@ -3,160 +3,160 @@
 <div class="container">
 
     <div class="row">
-
-        <div class="col-lg-12">
-            <h1 class="page-header">Gullcode
-                <small>An annual coding competition</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="../index.html">Home</a>
-                </li>
-                <li class="active">gullcode</li>
-            </ol>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <img class="img-responsive" src="pics/gullcode/gullcode-logo2.jpg">
         </div>
-
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-
-        <div class="col-lg-12">
-            <img class="img-responsive" src="pics/gullcode-logo.png">
-        </div>
-
-    </div>
-    <!-- /.row -->
-
-    <!-- Service Paragraphs -->
-
-    <div class="row">
-
-        <div class="col-md-8">
-            <h2 class="page-header">What is it?</h2>
-
-            <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats
-                vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        </div>
-
-        <div class="col-md-4">
-            <h2 class="page-header">Sign up!</h2>
-
-            <p>Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips
-                amets.</p>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <h2 class="page-header">Gullcode</h2>
+            <p>
+                Gull Code is an annual coding competition where teams of three code in any language of their choice. Lunch is provided, and free T-shirts.
+                In addition, there will be a Math and Computer Science career fair held during the event. Members can bring resumes and talk to employers.
+                Some professors will be offering extra credit and it is just a fun compeitive chance to show off your coding or mathematical skills.
+            </p>
+            <h2>Sign up here!</h2>
             <a class="btn btn-primary" href="https://involved.salisbury.edu/event/4913140">Click Me!</a>
         </div>
-
     </div>
-    <!-- /.row -->
-
-    <!-- Service Tabs -->
 
     <div class="row">
 
         <div class="col-lg-12">
             <h2 class="page-header">Sample Questions</h2>
-            <ul id="myTab" class="nav nav-tabs">
-                <li class="active"><a href="#service-one" data-toggle="tab">Question 1</a>
+            <!-- <ul id="sample questions"> -->
+                <h3>Tortise and the Hare</h3>
+                <p>
+                    In a race to see who is the fastest, the tortoise and the hare face off. At the end of the race the tortoise crosses the finish line first. Because the hare was overconfident in his ability to win, he decided to run circles around the tortoise.
+                    <h4>Task: Your job is to determine how many times (if any) the hare de- cided to run circles around the tortoise and determine the length of the cycle.</h4>
+                    <h4>Specifications:</h4>
+                    <ol>
+                        <li>The route of the hare will be given as a singly-linked list, the only part of the link list you will see is the address of the head.
+                        <li>If there is a cycle you can assume that the hare was running a circle around the tortoise.
+                        <li> Output should be integers separated by a space. The first number is the number of cycles, then following numbers are the length of each cycle (each one separated by a space).
+                    </ol>
+                </p>
+
+                <h3>Comma Sprinkler</h3>
+                <p>
+                    As practice will tell you, the English rules for comma placement are complex, frustrating, and often ambiguous. Many people, especially mathematicians and computer scientists, will, in practice, ignore them, and, apply custom rules, or, no rules, at all. Dr. Comma Sprinkler solved this issue by developing a set of rules that sprinkles commas in a sentence with no ambiguity and little simplicity.
+                    <h4>Task: Create an algorithm that applies her rules.</h4>
+                    <ol>
+                        <li>If a word anywhere in the text is preceded by a comma, find all occurrences of that word in the text, and put a comma before each of those occurrences, except in the case where such an occurrence is the first word of a sentence or already preceded by a comma.
+                        <li>If a word anywhere in the text is succeeded by a comma, find all occurrences of that word in the text, and put a comma after each of those occurrences, except in the case where such an occurrence is the last word of a sentence or already succeeded by a comma.
+                        <li>Apply rules 1 and 2 repeatedly until no new commas can be added using either of them.
+                    </ol>
+                    <h4>Specifications:</h4>
+                    <ol>
+                        <li>Input will be one line of text with at least 2 and at most 1,000,000 characters
+                        <li>Each character is either a lowercase letter, a comma, a period, or a space
+                        <li>Each line of text will begin with a word, and between every two words there will either be a single space, a comma followed by a space, or a period followed by a space (denoting the end of a sentence and the beginning of a new one).
+                    </ol>
+                </p>
+
+                <h3>Retro Texting</h3>
+                <p>
+                    Bellman went for a walk in the woods one beautiful spring morning. However, he lost track of his path and ended up lost. He has no idea where he is.
+                    <h4>Task: Write an algorithm that performs either f:¡steps¿ (to walk forward so many steps) or t¡num¿ (turn so many degrees)and using a subroutine we made, deter- mines if Bellman is out of the woods. If he isn’t keep doing the algorithm until he is.</h4>
+                    <h4>Specifications:</h4>
+                    <ol>
+                        <li>The algorithm should minimize the worst-case behavior (Note: if you simply walk straight until you leave the forest, and the forest is very long, you may have a bad worst case scenario)
+                        <li>Input will be in the form of a forest.h file that defines a black-box function we made
+                        <li>Your code should be a test.cpp that invokes the isLost function to determine if Bellman is lost.
+                        <li>You will want to compile with: g++ test.cpp forest1.cpp -std=c++11
+                    </ol>
+                </p>
+            <!--
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#service-one" data-toggle="tab">The Tortoise and the Hare</a>
                 </li>
-                <li><a href="#service-two" data-toggle="tab">Question 2</a>
+                <li><a href="#service-two" data-toggle="tab">Comma Sprinkler</a>
                 </li>
-                <li><a href="#service-three" data-toggle="tab">Question 3</a>
+                <li><a href="#service-three" data-toggle="tab">Retro Texting</a>
                 </li>
-                <li><a href="#service-four" data-toggle="tab">Question 4</a>
+                <li><a href="#service-four" data-toggle="tab">Car Rental</a>
                 </li>
-                <li><a href="#service-five" data-toggle="tab">Question 5</a>
+                <li><a href="#service-five" data-toggle="tab">Bellman's Lost in a Forest</a>
                 </li>
             </ul>
             <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade in active" id="service-one">
-                    <i class="fa fa-gear pull-left fa-4x"></i>
+                <div class="tab-pane active" id="service-one">
+                    <p>In a race to see who is the fastest, the tortoise and the hare face off. At the end of the race the tortoise crosses the finish line first. Because the hare was overconfident in his ability to win, he decided to run circles around the tortoise.
+                    Task: Your job is to determine how many times (if any) the hare de- cided to run circles around the tortoise and determine the length of the cycle.
+                    Specifications:\n
+                    1. The route of the hare will be given as a singly-linked list, the only part of the link list you will see
+                    is the address of the head.
+                    2. If there is a cycle you can assume that the hare was running a circle around the tortoise.
+                    3. Output should be integers separated by a space. The first number is the number of cycles, then
+                    following numbers are the length of each cycle (each one separated by a space).
+                    </p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum
-                        dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in
-                        faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Etiam placerat nunc ut tellus tristique, non posuere neque iaculis. Fusce aliquet dui
-                        ut felis rhoncus, vitae molestie mauris auctor. Donec pellentesque feugiat leo a adipiscing.
-                        Pellentesque quis tristique eros, sed rutrum mauris.</p>
-
-                    <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere
-                        placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent
-                        sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus
-                        porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
                 </div>
-                <div class="tab-pane fade" id="service-two">
-                    <i class="fa fa-gears pull-left fa-4x"></i>
-
-                    <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere
-                        placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent
-                        sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus
-                        porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
-
-                    <p>Vestibulum laoreet molestie urna ac vehicula. Phasellus laoreet semper ipsum ac gravida. Sed in
-                        varius tortor. Nullam blandit in neque quis aliquet. Fusce volutpat pellentesque sem non
-                        convallis. Suspendisse sit amet magna pulvinar, gravida mauris eu, tincidunt massa. Nam lectus
-                        mi, viverra non quam nec, mollis malesuada dolor. Vivamus hendrerit nunc interdum turpis
-                        egestas, a lobortis odio consequat. Fusce posuere purus quis ligula faucibus lacinia. Curabitur
-                        sit amet congue dolor. Duis dapibus hendrerit nunc et gravida. Phasellus mollis, lectus quis
-                        ornare aliquam, arcu orci posuere lectus, vehicula bibendum sem ante quis lacus.</p>
+                <div class="tab-pane" id="service-two">
+                    <p>Problem/Description: As practice will tell you, the English rules for comma placement are complex, frustrating, and often ambiguous. Many people, especially mathematicians and computer scientists, will, in practice, ignore them, and, apply custom rules, or, no rules, at all. Dr. Comma Sprinkler solved this issue by developing a set of rules that sprinkles commas in a sentence with no ambiguity and little simplicity.
+                    Task: Create an algorithm that applies her rules.
+                    1. If a word anywhere in the text is preceded by a comma, find all occurrences of that word in the text, and put a comma before each of those occurrences, except in the case where such an occurrence is the first word of a sentence or already preceded by a comma.
+                    2. If a word anywhere in the text is succeeded by a comma, find all occurrences of that word in the text, and put a comma after each of those occurrences, except in the case where such an occurrence is the last word of a sentence or already succeeded by a comma.
+                    3. Apply rules 1 and 2 repeatedly until no new commas can be added using either of them.
+                    Specifications:
+                    1. Input will be one line of text with at least 2 and at most 1,000,000 characters
+                    2. Each character is either a lowercase letter, a comma, a period, or a space
+                    3. Each line of text will begin with a word, and between every two words there will either be a single space, a comma followed by a space, or a period followed by a space (denoting the end of a sentence and the beginning of a new one).
+                </p>
                 </div>
-                <div class="tab-pane fade" id="service-three">
-                    <i class="fa fa-magic pull-left fa-4x"></i>
-
-                    <p>Vestibulum laoreet molestie urna ac vehicula. Phasellus laoreet semper ipsum ac gravida. Sed in
-                        varius tortor. Nullam blandit in neque quis aliquet. Fusce volutpat pellentesque sem non
-                        convallis. Suspendisse sit amet magna pulvinar, gravida mauris eu, tincidunt massa. Nam lectus
-                        mi, viverra non quam nec, mollis malesuada dolor. Vivamus hendrerit nunc interdum turpis
-                        egestas, a lobortis odio consequat. Fusce posuere purus quis ligula faucibus lacinia. Curabitur
-                        sit amet congue dolor. Duis dapibus hendrerit nunc et gravida. Phasellus mollis, lectus quis
-                        ornare aliquam, arcu orci posuere lectus, vehicula bibendum sem ante quis lacus.</p>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum
-                        dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in
-                        faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Etiam placerat nunc ut tellus tristique, non posuere neque iaculis. Fusce aliquet dui
-                        ut felis rhoncus, vitae molestie mauris auctor. Donec pellentesque feugiat leo a adipiscing.
-                        Pellentesque quis tristique eros, sed rutrum mauris.</p>
+                <div class="tab-pane" id="service-three">
+                    <p>Dr. Austin recently bought a smart phone, but misses the way he used to be able to text on his flip phone. However, pressing the number 2 three times to get a ’c’ can be annoying. Thanks to predictive (T-9) texting, Dr. Austin can quickly text his friends without having to tap numbers multiple times. Predictive style messaging is a messaging system where a phone has a predefined frequency table for a dictionary of words. Each number represents multiple letters and
+                        Task: Help Dr. Austin acclimate to his new smart phone by creating a program that allows him to text using predictive style messaging.
+                        Specifications:
+                        1. The numbers 2-9 represent the entire alphabet.
+                        2 = 1A, B, Cl
+                        3 = 1D, E, Fl
+                        4 = 1G, H, Il
+                        5 = 1J, K, Ll
+                        6 = 1M, N, Ol
+                        7 = 1P, Q, R. Sl
+                        8 = 1T, U, Vl
+                        9 = 1X, Y, Zl
+                        2. Input will be a frequency table (value of word followed by a word) followed by five asterisks, and
+                        then a series of numeric strings separated by a space.
+                        3. Each numeric string corresponds to a word and each string will only have lower case letters
+                        4. Output should be the string of text from the numeric string on one line
+                    </p>
                 </div>
-                <div class="tab-pane fade" id="service-four">
-                    <i class="fa fa-flask pull-left fa-4x"></i>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum
-                        dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in
-                        faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Etiam placerat nunc ut tellus tristique, non posuere neque iaculis. Fusce aliquet dui
-                        ut felis rhoncus, vitae molestie mauris auctor. Donec pellentesque feugiat leo a adipiscing.
-                        Pellentesque quis tristique eros, sed rutrum mauris.</p>
-
-                    <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere
-                        placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent
-                        sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus
-                        porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
+                <div class="tab-pane" id="service-four">
+                    <p>Salisbury University has two rental car locations. Each location has a varying level of demand (students who rent a car) and return rate. Since one of the locations has more demand than return SU can move cars overnight from one location to the next. SU wants to make sure that there are enough cars in each lot to maximize the return. However, you cannot move the cars during the day.
+                        Task: How many cars should be moved from one location to the next given a particular number of cars in each lot?
+                        Specifications:
+                        1. Each location can hold 20 cars max
+                        2. Every time a car is rented, SU earns $10, if no cars are available to rent, then SU earns $0
+                        3. Every time a car is moved to another location, it costs SU $2
+                        4. Maximum number of moves a night is 5
+                        5. If a return happens and the lot is full, at the end of the night if the lot past capacity, that car has
+                        to be moved (it is okay to go negative)
+                        6. Your code must process Lot shifts a day at a time, looking ahead to the next day is not allowed
+                        7. The input will include the number of spots containing cars out of the number of cars in both lot A and Lot B (separated by a line). Then the next line will include the day and number, followed by lines that will include which lot a transaction happened, a space, and then if it was rented and returned.
+                        8. The output should include the day, how much money you start the day with, how many cars start at each lot, and each transaction that happens. Then it should print the end of the day, the number of cars currently in each lot, the number of cars you want to move from one lot to the other, and the total money at the end of the day.
+                    </p>
                 </div>
-                <div class="tab-pane fade" id="service-five">
-                    <i class="fa fa-flag pull-left fa-4x"></i>
-
-                    <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere
-                        placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent
-                        sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus
-                        porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
-
-                    <p>Vestibulum laoreet molestie urna ac vehicula. Phasellus laoreet semper ipsum ac gravida. Sed in
-                        varius tortor. Nullam blandit in neque quis aliquet. Fusce volutpat pellentesque sem non
-                        convallis. Suspendisse sit amet magna pulvinar, gravida mauris eu, tincidunt massa. Nam lectus
-                        mi, viverra non quam nec, mollis malesuada dolor. Vivamus hendrerit nunc interdum turpis
-                        egestas, a lobortis odio consequat. Fusce posuere purus quis ligula faucibus lacinia. Curabitur
-                        sit amet congue dolor. Duis dapibus hendrerit nunc et gravida. Phasellus mollis, lectus quis
-                        ornare aliquam, arcu orci posuere lectus, vehicula bibendum sem ante quis lacus.</p>
+                <div class="tab-pane" id="service-five">
+                    <p>Problem/Description: Bellman went for a walk in the woods one beautiful spring morning. However, he lost track of his path and ended up lost. He has no idea where he is.
+                        Task: Write an algorithm that performs either f:¡steps¿ (to walk forward so many steps) or t¡num¿ (turn so many degrees)and using a subroutine we made, deter- mines if Bellman is out of the woods. If he isn’t keep doing the algorithm until he is.
+                        Specification:
+                        1. The algorithm should minimize the worst-case behavior (Note: if you simply
+                        walk straight until you leave the forest, and the forest is very long, you may have a bad worst case scenario)
+                        2. Input will be in the form of a forest.h file that defines a black-box function
+                        we made
+                        3. Your code should be a test.cpp that invokes the isLost function to determine
+                        if Bellman is lost.
+                        4. You will want to compile with: g++ test.cpp forest1.cpp -std=c++11
+                    </p>
                 </div>
             </div>
+            -->
+
         </div>
 
     </div>
     <!-- /.row -->
 
-    <!-- Service Images -->
 
     <div class="row">
 
@@ -165,27 +165,27 @@
         </div>
 
         <div class="col-sm-4">
-            <img class="img-responsive" src="pics/gullcode1.jpg">
+            <img class="img-responsive" src="pics/gullcode/gullcode1.jpg">
         </div>
 
         <div class="col-sm-4">
-            <img class="img-responsive" src="pics/gullcode2.jpg">
+            <img class="img-responsive" src="pics/gullcode/gullcode2.jpg">
         </div>
 
         <div class="col-sm-4">
-            <img class="img-responsive" src="pics/gullcode3.jpg">
+            <img class="img-responsive" src="pics/gullcode/gullcode3.jpg">
         </div>
 
         <div class="col-sm-4">
-            <img class="img-responsive" src="pics/gullcode5.jpg">
+            <img class="img-responsive" src="pics/gullcode/gullcode5.jpg">
         </div>
 
         <div class="col-sm-4">
-            <img class="img-responsive" src="pics/gullcode4.jpg">
+            <img class="img-responsive" src="pics/gullcode/gullcode4.jpg">
         </div>
 
         <div class="col-sm-4">
-            <img class="img-responsive" src="pics/gullcode6.jpg">
+            <img class="img-responsive" src="pics/gullcode/gullcode6.jpg">
         </div>
 
     </div>
